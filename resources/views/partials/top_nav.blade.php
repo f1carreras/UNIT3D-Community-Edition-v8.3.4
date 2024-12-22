@@ -264,7 +264,7 @@
                             class="{{ $percentage < 100 ? 'fa-fade' : '' }}"
                             style="color: lightcoral"
                         >
-                            Donate
+                            Apoya A F1Carreras
                         </span>
                         <div class="progress" style="background-color: slategray">
                             <div
@@ -290,11 +290,11 @@
                             Support {{ config('other.title') }} ({{ $percentage ?? 0 }}%)
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="https://polar.sh/HDInnovations">
                             <i class="fas fa-handshake"></i>
                             Support UNIT3D Development
-                        </a>
+                        </a>-->
                     </li>
                 </ul>
             </li>
