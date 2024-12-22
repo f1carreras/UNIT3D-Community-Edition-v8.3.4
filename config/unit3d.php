@@ -23,7 +23,7 @@ return [
     |
     */
 
-    'powered-by' => 'Powered By UNIT3D Community Edition v8.3.4',
+    'powered-by' => 'Powered By F1CARRERAS Community Edition v8.3.4',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     |
     */
 
-    'codebase' => 'UNIT3D Community Edition',
+    'codebase' => 'F1CARRERAS Community Edition',
 
     /*
     |--------------------------------------------------------------------------
