@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="panel-body" style="padding: 0px;">
-            <widgetbot server="1219287190601990175" channel="1219287191663022181" width="100%" height="600"></widgetbot>
+            <widgetbot server="1219287190601990175" channel="1219287190601990183" width="100%" height="600"></widgetbot>
         </div>
     </div>
 </div>
