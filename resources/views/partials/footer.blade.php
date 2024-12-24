@@ -2,7 +2,7 @@
     <div class="footer__wrapper">
         <section class="footer__section">
             <h2 class="footer__section-title">
-                <img src="{{ url('/favicon.ico') }}" style="height: 30px; vertical-align: sub" />
+                <img src="{{ url('/formula1_favicon.ico') }}" style="height: 30px; vertical-align: sub" />
                 <span class="top-nav__site-logo">{{ \config('other.title') }}</span>
             </h2>
             <p>{{ config('other.meta_description') }}</p>
