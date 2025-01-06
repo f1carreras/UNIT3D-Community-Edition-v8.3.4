@@ -61,7 +61,7 @@
                                         Efecto De Destello en Tu Nombre de Usuario
                                     </li>
                                     <li>
-                                        Icono Exclusivo Para Miembros Donadores
+                                        Icono Exclusivo Para Donadores
                                         @if ($package->donor_value === null)
                                             <i
                                                 id="lifeline"
