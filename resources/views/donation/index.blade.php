@@ -73,7 +73,7 @@
                                         @endif
                                     </li>
                                     <li>
-                                        Presume Que Apoyas al Equipo de F1Carreras
+                                        Presume Que Apoyas al Tracker
                                         {{ config('other.title') }}
                                     </li>
                                     @if ($package->upload_value !== null)
