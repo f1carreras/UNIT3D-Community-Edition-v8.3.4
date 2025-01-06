@@ -50,18 +50,18 @@
                                         <li>Custom User Icon</li>
                                     @endif
 
-                                    <li>Global Freeleech</li>
-                                    <li>Immunity To Automated Warnings (Don't Abuse)</li>
+                                    <li>Freeleech Global</li>
+                                    <li>Inmunidad Contra Advertencias Automaticas (Uso Responsable)</li>
                                     <li
                                         style="
                                             background-image: url(/img/sparkels.gif);
                                             width: auto;
                                         "
                                     >
-                                        Sparkle Effect On Username
+                                        Efecto De Destello en Tu Nombre de Usuario
                                     </li>
                                     <li>
-                                        Donor Star By Username
+                                        Icono Exclusivo Para Miembros Donadores
                                         @if ($package->donor_value === null)
                                             <i
                                                 id="lifeline"
@@ -73,24 +73,24 @@
                                         @endif
                                     </li>
                                     <li>
-                                        Warm Fuzzy Feeling By Supporting
+                                        Presume Que Apoyas al Equipo de F1Carreras
                                         {{ config('other.title') }}
                                     </li>
                                     @if ($package->upload_value !== null)
                                         <li>
                                             {{ App\Helpers\StringHelper::formatBytes($package->upload_value) }}
-                                            Upload Credit
+                                            Credito Para GB de Subida
                                         </li>
                                     @endif
 
                                     @if ($package->bonus_value !== null)
                                         <li>
-                                            {{ number_format($package->bonus_value) }} Bonus Points
+                                            {{ number_format($package->bonus_value) }} Bonus/Puntos Adicionales
                                         </li>
                                     @endif
 
                                     @if ($package->invite_value !== null)
-                                        <li>{{ $package->invite_value }} Invites</li>
+                                        <li>{{ $package->invite_value }} Invitaciones</li>
                                     @endif
                                 </ol>
                             </div>
@@ -101,7 +101,7 @@
                                         x-on:click.stop="$refs.dialog{{ $package->id }}.showModal()"
                                     >
                                         <i class="fas fa-handshake"></i>
-                                        Donate
+                                        Activar
                                     </button>
                                 </p>
                             </div>
@@ -113,7 +113,7 @@
 
         @foreach ($packages as $package)
             <dialog class="dialog" x-ref="dialog{{ $package->id }}">
-                <h4 class="dialog__heading">Donate $ {{ $package->cost }} USD</h4>
+                <h4 class="dialog__heading">Activa Tu Plan Y Ayudanos A Continuar Mejorando $ {{ $package->cost }} USD</h4>
                 <form
                     class="dialog__form"
                     method="POST"
@@ -122,7 +122,7 @@
                 >
                     @csrf
                     <span class="text-success text-center">
-                        To make a donation you must complete the following steps:
+                        Para Hacer Tu Donacion Completa Los Siguientes Pasos:
                     </span>
                     <div class="form__group--horizontal">
                         @foreach ($gateways->sortBy('position') as $gateway)
@@ -148,8 +148,7 @@
                             <strong>
                                 $ {{ $package->cost }} {{ config('donation.currency') }}
                             </strong>
-                            to gateway of your choice. Take note of the tx hash, receipt number, etc
-                            and input it below.
+                            Por favor Anota El Numero De Transaccion o Descarga El Comprobante De La Misma, Por Si Se Requiere Luego.
                         </p>
                     </div>
                     <div class="form__group--horizontal">
@@ -174,16 +173,16 @@
                                 name="transaction"
                             />
                             <label for="proof" class="form__label form__label--floating">
-                                Tx hash, Receipt number, Etc
+                                Envia Tu Nombre De Usuario En EL Tracker Y Discord (Super Importante)
                             </label>
                         </p>
                     </div>
                     <span class="text-warning">
-                        * Transactions may take up to 48 hours to process.
+                        * Las Activaciones Pueden Tardar Hasta 48 horas. (Tratamos De No Demorar Tanto).
                     </span>
                     <p class="form__group">
                         <input type="hidden" name="package_id" value="{{ $package->id }}" />
-                        <button class="form__button form__button--filled">Donate</button>
+                        <button class="form__button form__button--filled">Activar Plan</button>
                         <button
                             formmethod="dialog"
                             formnovalidate
