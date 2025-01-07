@@ -122,7 +122,7 @@
                 >
                     @csrf
                     <span class="text-success text-center">
-                        Para Hacer Tu Donacion Completa Los Siguientes Pasos:
+                        Para Hacer Tu Donacion Usa La Siguiente Cuenta Paypal:
                     </span>
                     <div class="form__group--horizontal">
                         @foreach ($gateways->sortBy('position') as $gateway)
