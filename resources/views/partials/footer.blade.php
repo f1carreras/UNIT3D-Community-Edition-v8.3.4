@@ -14,6 +14,8 @@
                     </a>
                 @endif
                 <a title="Apoya a F1Carreras" href="https://f1carreras.xyz/donations/"><img src="https://f1carreras.xyz/img/dona.png" alt="Dona por Favor" class="footer__icon" style="width: 150px;">
+
+                    
             </p>
         </section>
         <section class="footer__section">
