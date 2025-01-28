@@ -173,7 +173,7 @@
                                 name="transaction"
                             />
                             <label for="proof" class="form__label form__label--floating">
-                                Envia Tu Nombre De Usuario En EL Tracker Y Discord (Super Importante)
+                                Envia Tu Nombre De Usuario En El Tracker Y Discord (Super Importante)
                             </label>
                         </p>
                     </div>
