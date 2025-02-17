@@ -101,7 +101,7 @@
                                         x-on:click.stop="$refs.dialog{{ $package->id }}.showModal()"
                                     >
                                         <i class="fas fa-handshake"></i>
-                                        Activar
+                                        Detalles Pago
                                     </button>
                                 </p>
                             </div>
