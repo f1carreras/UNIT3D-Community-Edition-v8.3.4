@@ -144,7 +144,7 @@
                         @endforeach
 
                         <p class="text-info">
-                            Send
+                            Envía
                             <strong>
                                 $ {{ $package->cost }} {{ config('donation.currency') }}
                             </strong>
@@ -182,7 +182,7 @@
                     </span>
                     <p class="form__group">
                         <input type="hidden" name="package_id" value="{{ $package->id }}" />
-                        <button class="form__button form__button--filled">Solicitar Activacion</button>
+                        <button class="form__button form__button--filled">Solicitar Activación</button>
                         <button
                             formmethod="dialog"
                             formnovalidate
