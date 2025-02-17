@@ -182,7 +182,7 @@
                     </span>
                     <p class="form__group">
                         <input type="hidden" name="package_id" value="{{ $package->id }}" />
-                        <button class="form__button form__button--filled">Activar Plan</button>
+                        <button class="form__button form__button--filled">Solicitar Activacion</button>
                         <button
                             formmethod="dialog"
                             formnovalidate
