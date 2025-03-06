@@ -148,7 +148,7 @@
                             <strong>
                                 $ {{ $package->cost }} {{ config('donation.currency') }}
                             </strong>
-                            Por favor Anota El Numero De Transaccion o Descarga El Comprobante De La Misma, Por Si Se Requiere Luego.
+                            Por favor Anota El Numero De Transacción o Descarga El Comprobante De La Misma.
                         </p>
                     </div>
                     <div class="form__group--horizontal">
@@ -173,7 +173,7 @@
                                 name="transaction"
                             />
                             <label for="proof" class="form__label form__label--floating">
-                                Envia Tu Nombre De Usuario En El Tracker Y Discord (Super Importante)
+                                Ingresa El Número de Transacción de PayPal
                             </label>
                         </p>
                     </div>
